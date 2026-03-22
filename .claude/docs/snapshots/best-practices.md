@@ -117,7 +117,7 @@ Without clear success criteria, it might produce something that looks right but 
 
 | Strategy | Before | After |
 | --- | --- | --- |
-| **Provide verification criteria** | *”implement a function that validates email addresses"* | *"write a validateEmail function. example test cases: [[email protected]](/cdn-cgi/l/email-protection#0c797f697e4c69746d617c6069226f6361) is true, invalid is false, [[email protected]](/cdn-cgi/l/email-protection#97e2e4f2e5d7b9f4f8fa) is false. run the tests after implementing”* |
+| **Provide verification criteria** | *”implement a function that validates email addresses"* | *"write a validateEmail function. example test cases: [[email protected]](/cdn-cgi/l/email-protection#a9dcdaccdbe9ccd1c8c4d9c5cc87cac6c4) is true, invalid is false, [[email protected]](/cdn-cgi/l/email-protection#384d4b5d4a78165b5755) is false. run the tests after implementing”* |
 | **Verify UI changes visually** | *”make the dashboard look better"* | *"[paste screenshot] implement this design. take a screenshot of the result and compare it to the original. list differences and fix them”* |
 | **Address root causes, not symptoms** | *”the build is failing"* | *"the build fails with this error: [paste error]. fix it and verify the build succeeds. address the root cause, don’t suppress the error”* |
 
@@ -326,7 +326,7 @@ By default, Claude Code requests permission for actions that might modify your s
 * **Permission allowlists**: permit specific tools you know are safe (like `npm run lint` or `git commit`)
 * **Sandboxing**: enable OS-level isolation that restricts filesystem and network access, allowing Claude to work more freely within defined boundaries
 
-Alternatively, use `--dangerously-skip-permissions` to bypass all permission checks for contained workflows like fixing lint errors or generating boilerplate.
+Alternatively, use `--dangerously-skip-permissions` to bypass permission prompts for contained workflows like fixing lint errors or generating boilerplate. See [permission modes](/docs/en/permissions#permission-modes) for what is and isn’t skipped.
 
 Letting Claude run arbitrary commands can result in data loss, system corruption, or data exfiltration via prompt injection. Only use `--dangerously-skip-permissions` in a sandbox without internet access.
 
@@ -750,7 +750,7 @@ Learn
 
 Terms and policies
 
-[Privacy policy](https://www.anthropic.com/legal/privacy)[Disclosure policy](https://www.anthropic.com/responsible-disclosure-policy)[Usage policy](https://www.anthropic.com/legal/aup)[Commercial terms](https://www.anthropic.com/legal/commercial-terms)[Consumer terms](https://www.anthropic.com/legal/consumer-terms)
+[Privacy choices](#)[Privacy policy](https://www.anthropic.com/legal/privacy)[Disclosure policy](https://www.anthropic.com/responsible-disclosure-policy)[Usage policy](https://www.anthropic.com/legal/aup)[Commercial terms](https://www.anthropic.com/legal/commercial-terms)[Consumer terms](https://www.anthropic.com/legal/consumer-terms)
 
 Assistant
 
